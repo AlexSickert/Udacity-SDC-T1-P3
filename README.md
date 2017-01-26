@@ -8,7 +8,9 @@ I am not an expert in CNN and deep learning. Therefore my approach was to start 
 
 An important idea was that the upper part of the camera image is not carrying useful information. Only the street up to the horizon is relevant. Therefore the top 60 pixel could be cut away. 
 
-example image: 
+example image: ![alt tag](https://github.com/AlexSickert/Udacity-SDC-T1-P3/blob/master/example-raw-image.jpg?raw=true)
+
+
 
 I knew from the traffic sign classifier project that the images necessary to take decisions are actually very small. So I tried to scale down the images by cutting them in half. The result are images in size of 160 x 50 pixel. I looked at them and asked myself if I could decide where to with these images and said yes - it should be sufficient information. 
 
