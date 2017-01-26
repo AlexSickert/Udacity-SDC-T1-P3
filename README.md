@@ -8,13 +8,13 @@ I am not an expert in CNN and deep learning. Therefore my approach was to start 
 
 An important idea was that the upper part of the camera image is not carrying useful information. Only the street up to the horizon is relevant. Therefore the top 60 pixel could be cut away. 
 
-example image: ![alt tag](https://github.com/AlexSickert/Udacity-SDC-T1-P3/blob/master/example-raw-image.jpg?raw=true)
-
-
+example image: 
+![alt tag](https://github.com/AlexSickert/Udacity-SDC-T1-P3/blob/master/example-raw-image.jpg?raw=true)
 
 I knew from the traffic sign classifier project that the images necessary to take decisions are actually very small. So I tried to scale down the images by cutting them in half. The result are images in size of 160 x 50 pixel. I looked at them and asked myself if I could decide where to with these images and said yes - it should be sufficient information. 
 
 example image:
+![alt tag](https://github.com/AlexSickert/Udacity-SDC-T1-P3/blob/master/example-scaled-image.jpg?raw=true)
 
 Subsequently I thought that I should create a lot of training data. This is what i read in the forum. So I recorded a lot of images by driving nicely around the track. I recorded 35k images of the central camera. However, no matter which model I used, how many epochs used for training - the result was disappointing. The algorithm regularly did not decisively enough modify the steering angle and so the car got off track. This led to massive frustration as a lot of time was invested into this project. 
 
